@@ -1,0 +1,30 @@
+''' 
+IMPORTANTE: As funções "input" e "print" são acessíveis nativamente em Python, onde:  
+ - "input": função que permite a leitura de uma entrada do usuário. Lembre-se que, em alguns 
+   casos, é necessário converter/tratar os dados de entrada; 
+ - "print": função que imprime um texto enviado em seu parâmetro, a qual é essencial para a 
+   impressão dos dados de saída. 
+- "dict{}": dicionários possuem uma relação de chave - valor. Para cada chave haverá um valor.
+'''
+# Lê a entrada como um valor inteiro
+numero_mes = int(input())
+
+# Lista com os nomes dos meses em inglês
+nomes_meses = [
+    "January", "February", "March", "April",
+    "May", "June", "July", "August",
+    "September", "October", "November", "December"
+]
+
+# Verifica se o número está no intervalo válido
+if 1 <= numero_mes <= 12:
+    # Obtém o nome do mês correspondente e imprime com a primeira letra em maiúscula
+    nome_mes = nomes_meses[numero_mes - 1]
+    print(nome_mes)
+else:
+    print("Número de mês inválido")
+
+    ''' 
+    TODO Faça uma relação entre as possíveis entradas e os meses (em inglês).
+    TODO Imprima o valor de cada chave em relação as entradas do programa.
+    '''
