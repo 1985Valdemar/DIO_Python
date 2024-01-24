@@ -1,8 +1,13 @@
+# Proteção de dados 
 class Conta:
+    # CONSTRUTOR INICIALIZADOR DA CLASSE
     def __init__(self, nro_agencia, saldo=0):
         self._saldo = saldo
         self.nro_agencia = nro_agencia
 
+    # _saldo com anderlaine para ficar privado   
+  
+    # METODOS AUXILIARES
     def depositar(self, valor):
         # ...
         self._saldo += valor

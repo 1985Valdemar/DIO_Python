@@ -1,7 +1,8 @@
+# RETORNA VALORES
 def calcular_total(numeros):
     return sum(numeros)
 
-
+# RETORNA UMA TUPLA POIS E IMUTAVEL PARA NINGUEM MEXER.
 def retorna_antecessor_e_sucessor(numero):
     antecessor = numero - 1
     sucessor = numero + 1
